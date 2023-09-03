@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "cron-email-facturas"
+version = "0.1.0"
+description = ""
+authors = ["pedro rivera <ppsirg@gmail.com>"]
+readme = "README.md"
+packages = [{include = "cron_email_facturas"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pyyaml = "^6.0.1"
+imapclient = "^2.3.1"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.7.0"
+pylint = "^2.17.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
